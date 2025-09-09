@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="contact_info">
+            <h3>John Doe</h3>
+            <figure>
+                <img src="images/IconWhite-mail.png">
+                <figcaption>johndoe@gmail.com</figcaption>
+            </figure>
+            <figure>
+                <img src="images/IconWhite-telf.png">
+                <figcaption>+51 123456789</figcaption>
+            </figure>
+        </div>
+        <div id="navigation">
+            <nav>
+                <a href="#about_me"><button>About Me</button></a>
+                <a href="#skillsTier"><button>Skills</button></a>
+                <a href="#projectsTier"><button>Projects</button></a>
+                <a href="#recommendationsTier"><button>Recommendations</button></a>
+            </nav>
+        </div>
+    </header>
+    <!-- -------------------------------------------------------- -->
+    <!-- ABOUT_ME tier -->
+
+    <div id="about_me">
+        <figure>
+            <img src="images/profilePhoto.png" style="width:200px">
+        </figure>
+        <span id="presentation">
+            <h1>Hi, I'm John Doe! ►◄</h1>
+            <p>I'm a full stack developer with weeks of experience in both application and presentation layers. I have
+                worked on the Arduino UI for a plant irrigation system. And also with plenty of frontend projects based
+                on HTML, CSS and JS.</p>
+        </span>
+    </div>
+    <!-- -------------------------------------------------------- -->
+    <!-- SKILLS tier -->
+
+    <div id="skillsTier">
+        <h2>Skills</h2>
+        <div id="skills">
+            <figure>
+                <img src="https://raw.githubusercontent.com/BigStrawberry0225/Web_experiment1/main/image/html.jpg">
+                <figcaption>2 years experience</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.inovex.de/wp-content/uploads/2021/05/css.png">
+                <figcaption>2 years experience</figcaption>
+            </figure>
+            <figure>
+                <img
+                    src="https://static.vecteezy.com/system/resources/previews/048/332/149/non_2x/js-icon-transparent-background-free-png.png">
+                <figcaption>2 years experience</figcaption>
+            </figure>
+            <figure>
+                <img
+                    src="https://th.bing.com/th/id/R.301e8b1da2ecb005870da1b5bff8dc21?rik=8trCor%2bdNSnl7w&pid=ImgRaw&r=0">
+                <figcaption>2 years experience</figcaption>
+            </figure>
+            <figure>
+                <img src="https://ih1.redbubble.net/image.228752535.7142/st,small,507x507-pad,600x600,f8f8f8.u1.jpg">
+                <figcaption>2 years experience</figcaption>
+            </figure>
+            <figure>
+                <img
+                    src="https://preview.redd.it/9wucgh33vn571.png?auto=webp&s=b5dc0f57b609b3622576751b28a4e3364a4c280e">
+                <figcaption>+200 years experience</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- PROJECTS tier -->
+
+    <div id="projectsTier">
+        <h2>Projects</h2>
+        <div id="projects">
+            <h4>Unit Conversor system</h4>
+            <ul>
+                <li>A simple web application that allows users to convert between different units of measurement such as
+                    length, weight, and temperature, using JavaScript for dynamic calculations.</li>
+            </ul>
+            <hr>
+            <h4>Simple Interest Calculator</h4>
+            <ul>
+                <li>An interactive calculator that lets users input principal amount, interest rate, and time to compute
+                    the simple interest. Ideal for students and users managing basic financial scenarios.</li>
+            </ul>
+            <hr>
+            <h4>Plant irrigation device</h4>
+            <ul>
+                <li>A User Interface for data visualization and manual control for the Arduino-based system that
+                    monitors soil moisture.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------- -->
+    <!-- RECOMMENDATIONS tier -->
+
+    <br>
+    <div id="recommendationsTier">
+        <h2>Recommendations</h2>
+        <div id="recommendations">
+            <span>
+                <p>"John consistently delivers high-quality work and approaches every task with professionalism. He’s
+                    someone you can count on to get things done efficiently. "</p>
+                <p>"His problem-solving skills and attention to detail make him stand out. John is a reliable team
+                    member who adds real value to any project. "</p>
+                <p>"John brings both technical expertise and a collaborative spirit. He adapts quickly and is always
+                    willing to help others succeed. "</p>
+                <p>"John brings energy and focus to every project. He communicates clearly and collaborates effectively
+                    across teams."</p>
+            </span>
+            <br><br><br><br>
+            <div id="feedback">
+                <form id="form1" onsubmit="return checkdata()">
+                    <h3>Leave a Recommendation</h3>
+                    <input type="text" id="name" name="name" placeholder="Name"><br>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here."></textarea>
+                    <br>
+                    <div id="submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="backbutton">
+            <a href="#contact_info">
+                <img id="gohome" src="https://akhalikhedva.ge/images/up.png" width="33px">
+            </a>
+        </div>
+    </footer>
+</body>
+
+
+</html>

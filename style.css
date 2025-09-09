@@ -1,0 +1,237 @@
+/* "00" es para resaltar "background-color" */
+
+/* display: flex */
+/* align-items: center;/*FilasCentered*/
+/*Items aligned and justified to the center*/
+/* justify-content: center;ColumnCentered */
+/* margin: up right down left; */
+
+
+button,
+#contact_info,
+nav,
+#about_me,
+#projects h4,
+#recommendations,
+#skills {
+    background-color: 00;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    color: var(--main-color);
+    background-color: var(--theme-color);
+
+    --theme-color: black;
+    --main-color: white;
+    --secondary-color: blue;
+    --third-color: rgb(0, 0, 63);
+
+}
+
+h1,
+h2 {
+    color: var(--secondary-color);
+}
+
+h2 {
+    margin-left: 50px;
+}
+
+h3 {
+    color: var(--main-color);
+}
+
+/* ------------------------------------------------- */
+/* HEADER tier */
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    margin: -8px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#navigation {
+
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--main-color);
+    border-color: rgba(0, 0, 0, 0);
+    font-size: larger;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+}
+
+button:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 30px;
+
+    text-decoration: underline;
+    font-family: Verdana;
+}
+
+h3 {
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+
+#contact_info figure {
+    display: flex;
+    margin: 5px;
+}
+
+#contact_info img {
+    margin-right: 5px;
+}
+
+#contact_info h3 {
+    color: white;
+    font-weight: lighter
+}
+
+#contact_info img {
+    width: 20px;
+}
+
+figcaption {
+    font-size: small;
+}
+
+/* ------------------------------------------------- */
+/* PRESENTATION tier */
+#about_me {
+    display: flex;
+    /* up right down left */
+    margin: 20px 40px 0 60px;
+    color: dimgray;
+}
+
+#presentation {
+    margin: 20px;
+}
+
+/* ------------------------------------------------- */
+/* SKILLS tier*/
+
+#skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+#skills figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+}
+
+#skills img,
+#skills figcaption {
+    padding: 10px;
+}
+
+#skills img {
+    width: 70px;
+}
+
+/* ------------------------------------------------- */
+/* PROYECTS tier */
+
+#projects {
+    margin: 0 90px 0 90px
+}
+
+#projects li {
+    margin-left: 20px;
+}
+
+#projects hr {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* ------------------------------------------------- */
+/* RECOMMENDATIONS tier */
+
+#recommendations {
+    margin-left: 90px;
+    margin-right: 90px;
+
+}
+
+#recommendations span {
+    display: flex;
+}
+
+#recommendations span p {
+    font-style: italic;
+
+    width: 33%;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#feedback {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#feedback h3 {
+    text-align: left;
+}
+
+#feedback input,
+#feedback textarea {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px;
+
+    color: var(--main-color);
+    background-color: var(--theme-color);
+}
+
+#submit {
+    text-align: center;
+}
+
+#feedback button {
+    margin-top: 40px;
+    padding: 8px 55px 8px 55px;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------- */
+/* FOOTER tier */
+
+footer {
+    margin-top: 80px;
+}
+
+#backbutton {
+    position: fixed;
+    right: 35px;
+    bottom: 15px;
+}
